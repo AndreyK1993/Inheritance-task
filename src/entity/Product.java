@@ -4,12 +4,15 @@ public class Product {
 
     private double value;
 
-    public Product (double value) {
+    public double getValue() {
+        return value;
+    }
+
+    public void setValue(double value) {
         this.value = value;
     }
 
-    public double calculateWinnings() {
-
-        return value * 1.25;
+    public Product (double value) {
+        this.value = value;
     }
 }
