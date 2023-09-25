@@ -2,17 +2,15 @@ package entity;
 
 public class Product {
 
-    private double value;
+    private final double value;
+
+    public Product(double value) {
+
+        this.value = value;
+    }
 
     public double getValue() {
         return value;
     }
 
-    public void setValue(double value) {
-        this.value = value;
-    }
-
-    public Product (double value) {
-        this.value = value;
-    }
 }

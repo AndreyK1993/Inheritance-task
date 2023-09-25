@@ -7,7 +7,7 @@ public class ProductModel {
         return value * 1.25;
     }
 
-    public class ProductA extends Product {
+    public class ProductA extends ProductModel {
 
         public ProductA(double value) {
 
@@ -24,7 +24,7 @@ public class ProductModel {
         }
     }
 
-    public class ProductB extends Product {
+    public class ProductB extends ProductModel {
         public ProductB(double value) {
             super(value);
         }
@@ -40,7 +40,7 @@ public class ProductModel {
         }
     }
 
-    public class ProductC extends Product {
+    public class ProductC extends ProductModel {
         public ProductC(double value) {
             super(value);
         }
