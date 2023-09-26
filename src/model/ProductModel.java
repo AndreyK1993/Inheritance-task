@@ -1,7 +1,5 @@
 package model;
 
-import view.ProductView;
-
 public class ProductModel {
     public double value;
     public int random;

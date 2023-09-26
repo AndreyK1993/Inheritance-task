@@ -1,6 +1,5 @@
 package view;
 
-
 public class ProductView {
 
     public void getOutput(double value, String output, int random) {
