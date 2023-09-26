@@ -2,6 +2,7 @@ package model;
 
 public class ProductA extends ProductModel {
     public ProductA(double value, int random) {
+
         super(value, random);
     }
 
@@ -10,7 +11,7 @@ public class ProductA extends ProductModel {
         if (random < 3) {
             return value * 1.25;
         } else {
-            return 0;
+            return super.calculateWinnings();
         }
     }
 }
