@@ -4,15 +4,13 @@ package view;
 
 public class ProductView {
 
-    public double[] getData() {
-        double random = (int) (Math.random() * 10);
+    //public double[] getData() {
 
         //Scanner sc = new Scanner(System.in);
         //System.out.print("Enter value: ");
         //String value = sc.nextLine().trim();
         //return new double [] {value};
-        return new double [] {random};
-    }
+    //}
 
     public void getOutput(String output) {
 

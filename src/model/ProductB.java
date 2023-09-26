@@ -1,13 +1,13 @@
 package model;
 
 public class ProductB extends ProductModel {
-    public ProductB(double value) {
-        super(value);
+    public ProductB(double value, int random) {
+        super(value, random);
     }
 
     @Override
     public double calculateWinnings() {
-        if (value >= 3 && value <= 7) {
+        if (random >= 3 && random <= 7) {
             double winningsBeforeFee = super.calculateWinnings();
             return winningsBeforeFee - (0.05 * value);
         } else {

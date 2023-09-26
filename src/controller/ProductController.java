@@ -6,9 +6,9 @@ import view.ProductView;
 
 public class ProductController {
 
-    public void runApp(double value) {
+    public void runApp(double value, int random) {
         ProductView view = new ProductView();
-        ProductModel model = new ProductModel(value);
+        ProductModel model = new ProductModel(value, random);
 
         double winnings = model.calculateWinnings();
         String winningsFormatted = Rounder.roundValue(winnings);
