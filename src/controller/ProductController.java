@@ -14,7 +14,9 @@ import view.ProductView;
 
 public class ProductController {
 
-    public void runApp(double value, int random) {
+    public void runApp(double value) {
+
+        int random = (int) (Math.random() * 10);
 
         ProductView view = new ProductView();
 

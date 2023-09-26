@@ -12,10 +12,10 @@ public class Main {
         System.out.print("Enter value: ");
         double value = Double.parseDouble(sc.nextLine().trim());
 
-        int random = (int) (Math.random() * 10);
+        //int random = (int) (Math.random() * 10);
 
         ProductController controller = new ProductController();
 
-        controller.runApp(value, random);
+        controller.runApp(value);
     }
 }
