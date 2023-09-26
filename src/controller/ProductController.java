@@ -6,7 +6,7 @@ import view.ProductView;
 
 public class ProductController {
 
-    public void runApp(double value, int random) {
+    public void runApp(double value) {
         ProductView view = new ProductView();
         ProductModel model = new ProductModel(value);
 

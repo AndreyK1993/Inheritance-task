@@ -1,6 +1,9 @@
 package model;
 
 public class ProductB extends ProductModel {
+    public ProductB(double value) {
+        super(value);
+    }
 
     @Override
     public double calculateWinnings() {
