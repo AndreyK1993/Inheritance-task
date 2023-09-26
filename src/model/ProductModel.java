@@ -3,7 +3,7 @@ package model;
 import view.ProductView;
 
 public class ProductModel {
-    private double value;
+    public double value;
 
     public ProductModel(double value) {
         this.value = value;
