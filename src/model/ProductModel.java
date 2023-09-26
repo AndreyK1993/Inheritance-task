@@ -10,6 +10,7 @@ public class ProductModel {
     }
 
     public double calculateWinnings() {
+
         return value * 1.25;
     }
 }
