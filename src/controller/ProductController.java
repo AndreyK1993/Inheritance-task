@@ -16,6 +16,7 @@ public class ProductController {
         view.getOutput(winningsFormatted);
 
         System.out.println("Your winnings: " + winningsFormatted);
+        System.out.println("Random: " + random);
 
     }
 
