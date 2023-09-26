@@ -1,52 +1,21 @@
 package controller;
 
-import entity.Product;
 import model.ProductModel;
 import utils.Rounder;
 import view.ProductView;
 
 public class ProductController {
 
-    public void runApp() {
+    public void runApp(double value, int random) {
         ProductView view = new ProductView();
-        ProductModel model = new ProductModel();
+        ProductModel model = new ProductModel(value);
 
-        Product product = convertData(view.getData());
+        double winnings = model.calculateWinnings();
+        String winningsFormatted = Rounder.roundValue(winnings);
 
-        view.getOutput(formOutput(product.getName(),
-                Rounder.roundValue
-                        (model.calculateWinnings(product))));
-    }
+        view.getOutput(winningsFormatted);
 
-    private String formOutput(String cost) {
-
+        System.out.println("Your winnings: " + winningsFormatted);
 
     }
-
-    private Product convertData(String[] data) {
-        return new Product(data[0], Integer.parseInt(data[1]),
-                Double.parseDouble(data[2]));
-    }
-
-    Product product;
-
-        if(value< 3)
-
-    {
-        product = new ProductA(value);
-    } else if(value >=3&&value <=7)
-
-    {
-        product = new ProductB(value);
-    } else
-
-    {
-        product = new ProductC(value);
-    }
-
-    double winnings = product.calculateWinnings();
-
-        System.out.println("Your winnings: "+winnings);
-
-}
 }
