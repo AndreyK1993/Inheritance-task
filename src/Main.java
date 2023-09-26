@@ -6,7 +6,7 @@ public class Main {
 
         ProductController controller = new ProductController();
 
-        double value = 100;
+        double value = 10;
 
         int random = (int) (Math.random() * 10);
 
