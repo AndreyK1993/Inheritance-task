@@ -8,7 +8,7 @@ public class ProductB extends ProductModel {
     @Override
     public double calculateWinnings() {
         if (random >= 3 && random <= 7) {
-            double winningsBeforeFee = super.calculateWinnings();
+            double winningsBeforeFee = value * 1.25;
             return winningsBeforeFee - (0.05 * value);
         } else {
             return 0;

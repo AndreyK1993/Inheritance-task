@@ -12,6 +12,16 @@ public class ProductModel {
     }
 
     public double calculateWinnings() {
+        if (random < 3) {
             return value * 1.25;
+        } else if (random >= 3 && random <= 7) {
+            double winningsBeforeFee = value * 1.25;
+            return winningsBeforeFee - (0.05 * value);
+        } else if (random > 7) {
+            double winningsBeforeFee = value * 1.25;
+            return (winningsBeforeFee - (0.10 * winningsBeforeFee)) * 2;
+        } else {
+            return 0;
+        }
     }
 }
