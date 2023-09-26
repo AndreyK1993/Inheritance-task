@@ -11,7 +11,7 @@ public class ProductB extends ProductModel {
             double winningsBeforeFee = super.calculateWinnings();
             return winningsBeforeFee - (0.05 * value);
         } else {
-            return super.calculateWinnings();
+            return 0;
         }
     }
 }
